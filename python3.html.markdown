@@ -271,7 +271,7 @@ li.extend(other_li)  # Now li is [1, 2, 3, 4, 5, 6]
 len(li)  # => 6
 
 
-# Tuples are like lists but are immutable.
+# Tuples are like lists, but are immutable and unchangeable.
 tup = (1, 2, 3)
 tup[0]      # => 1
 tup[0] = 3  # Raises a TypeError
@@ -427,6 +427,16 @@ prints:
 for animal in ["dog", "cat", "mouse"]:
     # You can use format() to interpolate formatted strings
     print("{} is a mammal".format(animal))
+
+"""
+# enumerate function retrieves both the index and the value of each item in the list
+for i, value in enumerate( ["dogs", "cats", "mouse"] ):
+    print(value)
+prints:
+    dogs
+    cats
+    mouse
+
 
 """
 "range(number)" returns an iterable of numbers
